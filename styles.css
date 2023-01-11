@@ -116,5 +116,89 @@ button {
 
 main {
     display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 3fr 1fr;
     background-color: #e2e8f0;
+    padding: 16px;
+}
+
+.cards {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 32px;
+}
+
+.card {
+    display: grid;
+    background-color: white;
+    border-left: 6px solid #fbbf24;
+    border-radius: 6px;
+    padding: 32px 16px 16px 16px;
+    width: 400px;
+    box-shadow: 5px 10px 18px #cfcfcf;
+}
+
+.card h1 {
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.card p {
+    margin: 0;
+}
+
+.options {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.left-main h2 {
+    font-size: 20px;
+}
+
+.announcements, .trending {
+    background-color: white;
+    border-radius: 6px;
+    padding: 16px 16px 16px 32px;
+}
+
+.announcements h3 {
+    font-size: 14px;
+    margin: 0;
+    padding-top: 8px;
+    padding-bottom: 2px;
+}
+
+.announcements p {
+    margin: 0;
+    font-size: 12px;
+    padding-bottom: 8px;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.person img {
+    width: 42px;
+    height: 42px;
+    padding-right: 22px;
+}
+
+.top, .bottom {
+    font-size: 14px;
+}
+
+.top h2, .bottom h2 {
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.right-main {
+    display: grid;
+    row-gap: 12px;
 }
